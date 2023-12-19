@@ -52,6 +52,7 @@ jobs:
       - name: Deploy to EB
         # 엘라스틱 빈스톡으로 deploy 하는 라이브러리를 사용
         uses: einaregilsson/beanstalk-deploy@v21
+
         with:
           # 환경변수값은 직접 저장하지 않음
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY }}
